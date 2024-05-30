@@ -3,8 +3,8 @@ precio = 400000
 precioSpan = document.querySelector(".precio-inicial");
 precioSpan.innerHTML = precio
 
-let cantidadFinal=document.querySelector(".cantidad")
-let valorCant=0
+let cantidadFinal=undefined
+let valorCant=undefined
 let total =document.querySelector(".valor-total")
 
 function funSumar(){
@@ -12,7 +12,7 @@ function funSumar(){
   valorCant=Number(cantidadFinal.innerHTML)
   cantidadFinal.innerHTML= valorCant+1
   valorCant=Number(cantidadFinal.innerHTML)
-  total.innerHTML= Number(cantidadFinal.innerHTML) * precio 
+  total.innerHTML= valorCant* precio 
 
   if (Number(valorCant)<0){
     alert("No se puede tener cantidad negativa")
@@ -29,7 +29,7 @@ function funRestar(){
   valorCant=Number(cantidadFinal.innerHTML)
   cantidadFinal.innerHTML= valorCant-1
   valorCant=Number(cantidadFinal.innerHTML)
-  total.innerHTML= Number(cantidadFinal.innerHTML) * precio 
+  total.innerHTML= valorCant * precio 
 
   if (Number(valorCant)<0){
     alert("No se puede tener cantidad negativa")
