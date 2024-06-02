@@ -13,15 +13,6 @@ function funSumar(){
   cantidadFinal.innerHTML= valorCant+1
   valorCant=Number(cantidadFinal.innerHTML)
   total.innerHTML= valorCant* precio 
-
-  if (Number(valorCant)<0){
-    alert("No se puede tener cantidad negativa")
-    cantidadFinal.innerHTML=0
-    total.innerHTML=0
-    valorCant=0
-  } else {
-    valorCant=valorCant
-  }
 }
 
 function funRestar(){
